@@ -1,25 +1,25 @@
-
-<md-card>
-  <md-card-title>Connection</md-card-title>
-  <md-card-content>
+<!-- 
+<mat-card>
+  <mat-card-title>Connection</mat-card-title>
+  <mat-card-content>
     <form [formGroup]="myForm">
-      <md-input-container [ngClass]="{'error': myForm.controls['email'].errors && !myForm.controls['email'].pristine}" dividerColor="{{myForm.controls['email'].errors && !myForm.controls['email'].pristine ? 'warn' : 'primary'}}">
-        <input type="email" mdInput formControlName="email" placeholder="Email" required>
+      <mat-input-container [ngClass]="{'error': myForm.controls['email'].errors && !myForm.controls['email'].pristine}" >
+        <input type="email" matInput formControlName="email" placeholder="Email" required>
         <div *ngIf="myForm.controls['email'].errors && !myForm.controls['email'].pristine" class="error-msg">
           <div [hidden]="!myForm.controls['email'].errors.required">Email is required.</div>
           <div [hidden]="!myForm.controls['email'].errors.patternInvalid">Email is invalid.</div>
         </div>
-      </md-input-container>
-      <md-input-container [ngClass]="{'error': myForm.controls['password'].errors && !myForm.controls['password'].pristine}"
+      </mat-input-container>
+      <mat-input-container [ngClass]="{'error': myForm.controls['password'].errors && !myForm.controls['password'].pristine}"
         dividerColor="{{myForm.controls['password'].errors && !myForm.controls['password'].pristine ? 'warn' : 'primary'}}">
-        <input type="password" mdInput formControlName="password" placeholder="Password" required>
+        <input type="password" matInput formControlName="password" placeholder="Password" required>
         <div *ngIf="myForm.controls['password'].errors && !myForm.controls['password'].pristine" class="error-msg">
           <div [hidden]="!myForm.controls['password'].errors.required">Password is required.</div>
         </div>
-      </md-input-container>
+      </mat-input-container>
     </form>
-  </md-card-content>
-  <md-card-actions align="end">
-    <button md-raised-button class="btn" [disabled]="myForm.invalid" (click)="login()">Login</button>
-  </md-card-actions>
-</md-card>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button class="btn" [disabled]="myForm.invalid" (click)="login()">Login</button>
+  </mat-card-actions>
+</mat-card> -->
